@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Akshar', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: auto ;
+    margin-left: auto;
+}
+.active{
+    color: tomato !important;
+}
+
+/* HEADER STYLES */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color 0.5s ease;
+}
+.site-header.white-header{
+    background-color: #fff;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    
+}
+.site-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.site-logo {
+    border:  transparent;
+    border-radius: 5px;
+    transition: border 0.3s;
+
+}
+.site-header.white-header .site-logo{
+    border-color: #000;
+    border-radius: 5px;
+}
+.site-logo:hover{
+    opacity: 0.8;
+}
+.site-logo:active{
+    opacity: 0.6;
+}
+
+.site-nav-list {
+    display: flex;
+    list-style: none;
+    
+}
+.sitenav-item:not(:last-child) {
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.sitenav-link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+.site-header.white-header .sitenav-link{
+    color: #000;
+
+}
+.sitenav-link:hover{
+    color: tomato;
+}
+
+.main-content {
+    flex-grow: 1;
+
+}
+.hero {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./img/bmw.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-heading {
+    font-family: 'Akshar', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    color: rgb(211, 208, 223);
+    font-style: normal;
+}
+.hero-text {
+    font-size: 20px;
+    font-style: italic;
+    color: #fff;
+    font-family: 'Square Peg', cursive;
+}
+.features {
+    background: url(./img/bmw-features.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-item{
+    color: #fff;
+}
+.features-heading {
+    font-size: 50px;
+    color: rgba(50, 50, 206, 0.685);
+}
+.features-text {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.514);
+
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #666; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #333; 
+  }
